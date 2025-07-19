@@ -30,3 +30,12 @@
     display: flex;
     justify-content: center;
 }
+.color-picker{
+   width: fit-content;
+  border: 1px solid black;
+  padding: 10px 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: 130px;
+  right: 0;
+}

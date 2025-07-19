@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Home.css";
 import EmojiButton from "../components/EmojiButton/EmojiButton";
+import ColorButton from "../components/ColorButton/ColorButton";
 
 function Home() {
   const [emoji, setEmoji] = useState("🥰");
@@ -43,6 +44,20 @@ function Home() {
         <EmojiButton emoji={"🪂"} setEmoji={setEmoji} />
         <EmojiButton emoji={"🌞"} setEmoji={setEmoji} />
         <EmojiButton emoji={"🧡"} setEmoji={setEmoji} />
+      </div>
+
+
+      <div className="color-picker">
+        <ColorButton color={"#ccffcc"} setColor={setColor} />
+        <ColorButton color={"#cce0ff"} setColor={setColor} />
+        <ColorButton color={" #ff6666"} setColor={setColor} />
+        <ColorButton color={" #d24dff"} setColor={setColor} />
+        <ColorButton color={" #ff7733"} setColor={setColor} />
+        <ColorButton color={" #990099"} setColor={setColor} />
+        <ColorButton color={" #999966"} setColor={setColor} />
+        <ColorButton color={"#33adff"} setColor={setColor} />
+        <ColorButton color={"#7575a3"} setColor={setColor} />
+        <ColorButton color={" #ac3973"} setColor={setColor} />
       </div>
     </div>
   );

@@ -1,12 +1,16 @@
-import React from 'react'
 import "./ColorButton.css";
 
-function ColorButton() {
+function ColorButton({ color, setColor }) {
   return (
-    <div>
-      
+    <div
+      className="color"
+      onClick={() => {
+        setColor(color);
+      }}
+      style={{backgroundColor: color}}
+    >
     </div>
-  )
+  );
 }
 
-export default ColorButton
+export default ColorButton;
