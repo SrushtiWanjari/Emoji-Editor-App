@@ -1,15 +1,15 @@
 import "./EmojiButton.css";
 
-function EmojiButton({emoji, setEmoji}) {
+function EmojiButton({ emoji, setEmoji }) {
   return (
     <div
-          className="emojis"
-          onClick={() => {
-            setEmoji(emoji);
-          }}
-        >
-          {emoji}
-        </div>
+      className="emojis"
+      onClick={() => {
+        setEmoji(emoji);
+      }}
+    >
+      {emoji}
+    </div>
   );
 }
 
