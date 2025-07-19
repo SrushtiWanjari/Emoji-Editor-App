@@ -5,8 +5,8 @@ import EmojiButton from "../components/EmojiButton/EmojiButton";
 function Home() {
   const [emoji, setEmoji] = useState("🥰");
   const [emojiSize, setEmojiSize] = useState("30");
+  const [color, setColor] = useState("#000");
 
-  
   return (
     <div className="container">
       <h1 className="heading">Emoji Editor App</h1>
@@ -16,10 +16,11 @@ function Home() {
         hook to manage state in a functional component.{" "}
       </p>
 
-      <div className="main-emoji-box" style={{fontSize: `${emojiSize}px`}}>{emoji}</div>
+      <div className="main-emoji-box" style={{ fontSize: `${emojiSize}px` }}>
+        {emoji}
+      </div>
 
       <div className="emoji-range">
-        {emojiSize}
         <input
           type="range"
           min="0"
@@ -30,7 +31,6 @@ function Home() {
           value={emojiSize}
         />
       </div>
-    
 
       <div className="emoji-picker">
         <EmojiButton emoji={"📸"} setEmoji={setEmoji} />
