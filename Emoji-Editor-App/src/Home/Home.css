@@ -1,0 +1,29 @@
+.container{
+    position: relative;
+}
+.heading {
+  text-align: center;
+}
+.description {
+  text-align: center;
+}
+.main-emoji-box {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+  border-radius: 25px;
+  border: 1px solid gray;
+  box-shadow: 0 4px 6px gray;
+}
+.emoji-picker {
+  width: fit-content;
+  border: 1px solid black;
+  padding: 10px 5px;
+  border-radius: 10px;
+  position:absolute;
+  top: 130px;
+}
+
