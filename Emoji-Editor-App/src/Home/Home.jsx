@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Home.css";
-import EmojiButton from "../components/EmojiButton";
+import EmojiButton from "../components/EmojiButton/EmojiButton";
 
 function Home() {
   const [emoji, setEmoji] = useState("🥰");

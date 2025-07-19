@@ -1,4 +1,4 @@
-import './EmojiButton.css';
+import "./EmojiButton.css";
 
 function EmojiButton({emoji, setEmoji}) {
   return (
