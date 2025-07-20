@@ -1,12 +1,14 @@
 import { useState } from "react";
 import "./Home.css";
 import EmojiButton from "../components/EmojiButton/EmojiButton";
+import ImgRotate from "../Home/rotate.png";
 import ColorButton from "../components/ColorButton/ColorButton";
 
 function Home() {
   const [emoji, setEmoji] = useState("🥰");
   const [emojiSize, setEmojiSize] = useState("30");
-  const [color, setColor] = useState("#000");
+  const [angle, setAngle] = useState("0");
+  const [bgColor, setBgColor] = useState("#000");
 
   return (
     <div className="container">
@@ -17,8 +19,8 @@ function Home() {
         hook to manage state in a functional component.{" "}
       </p>
 
-      <div className="main-emoji-box" style={{ fontSize: `${emojiSize}px` }}>
-        {emoji}
+      <div className="main-emoji-box" style={{ fontSize: `${emojiSize}px`, backgroundColor: bgColor }}>
+        <span style={{ transform: `rotate(${angle}deg)` }}>{emoji}</span>
       </div>
 
       <div className="emoji-range">
@@ -31,6 +33,10 @@ function Home() {
           }}
           value={emojiSize}
         />
+      </div>
+
+      <div className="angle-container">
+        <img src={ImgRotate} alt="rotate" height="20px"  className="angle-img"/>
       </div>
 
       <div className="emoji-picker">
@@ -46,18 +52,17 @@ function Home() {
         <EmojiButton emoji={"🧡"} setEmoji={setEmoji} />
       </div>
 
-
       <div className="color-picker">
-        <ColorButton color={"#ccffcc"} setColor={setColor} />
-        <ColorButton color={"#cce0ff"} setColor={setColor} />
-        <ColorButton color={" #ff6666"} setColor={setColor} />
-        <ColorButton color={" #d24dff"} setColor={setColor} />
-        <ColorButton color={" #ff7733"} setColor={setColor} />
-        <ColorButton color={" #990099"} setColor={setColor} />
-        <ColorButton color={" #999966"} setColor={setColor} />
-        <ColorButton color={"#33adff"} setColor={setColor} />
-        <ColorButton color={"#7575a3"} setColor={setColor} />
-        <ColorButton color={" #ac3973"} setColor={setColor} />
+        <ColorButton bgColor={"#ff4d4d"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#668cff"} setBgColor={setBgColor} />
+        <ColorButton bgColor={" #800080"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#b2b266"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#c65353"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#ff4d94"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#85adad"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#ffc266"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#c2c2a3"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#cc6666"} setBgColor={setBgColor} />
       </div>
     </div>
   );
