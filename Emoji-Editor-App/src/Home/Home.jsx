@@ -5,7 +5,7 @@ import ImgRotate from "../Home/rotate.png";
 import ColorButton from "../components/ColorButton/ColorButton";
 
 function Home() {
-  const [emoji, setEmoji] = useState("🥰");
+  const [emoji, setEmoji] = useState("😊");
   const [emojiSize, setEmojiSize] = useState("30");
   const [angle, setAngle] = useState("0");
   const [bgColor, setBgColor] = useState("#000");
@@ -36,7 +36,10 @@ function Home() {
       </div>
 
       <div className="angle-container">
-        <img src={ImgRotate} alt="rotate" height="20px"  className="angle-img"/>
+        <img src={ImgRotate} alt="rotate" height="20px"  className="angle-img" 
+        onClick={()=> {
+          setAngle(angle + 45);
+        }}/>
       </div>
 
       <div className="emoji-picker">
