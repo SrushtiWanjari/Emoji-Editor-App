@@ -4,7 +4,7 @@ An emoji editor is a software application or a web-based tool that enables users
 ---
 Screenshot Of Emoji Editor : 
 
-![Emoji Creator Screenshot](Emoji-Editor.png)
+![Emoji Creator Screenshot](./Emoji-Editor-App/src/Home/Emoji-Editor.png)
 
 ---
 **Happy Emoji Crafting! 🥳**
