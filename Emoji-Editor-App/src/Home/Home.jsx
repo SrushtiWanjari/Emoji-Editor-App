@@ -8,19 +8,18 @@ function Home() {
   const [emoji, setEmoji] = useState("😊");
   const [emojiSize, setEmojiSize] = useState("30");
   const [angle, setAngle] = useState("0");
-  const [bgColor, setBgColor] = useState("#000");
+  const [bgColor, setBgColor] = useState("#ccccb3");
 
   return (
     <div className="container">
-      <h1 className="heading">Emoji Editor App</h1>
+      <h1 className="heading"> 😍 Emoji Creator 😍</h1>
 
       <p className="description">
-        This is a simple React app that demonstrates how to use the useState
-        hook to manage state in a functional component.{" "}
+        Create, customize, and share expressive emojis with an intuitive editor.. 🤖{" "}
       </p>
 
       <div className="main-emoji-box" style={{ fontSize: `${emojiSize}px`, backgroundColor: bgColor }}>
-        <span style={{ transform: `rotate(${angle}deg)` }}>{emoji}</span>
+        <span style={{ transform: `rotate(${angle}deg)` }} >{emoji}</span>
       </div>
 
       <div className="emoji-range">
@@ -31,7 +30,7 @@ function Home() {
           onChange={(e) => {
             setEmojiSize(e.target.value);
           }}
-          value={emojiSize}
+          value={emojiSize} 
         />
       </div>
 
@@ -56,15 +55,15 @@ function Home() {
       </div>
 
       <div className="color-picker">
-        <ColorButton bgColor={"#ff4d4d"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#990000"} setBgColor={setBgColor} />
         <ColorButton bgColor={"#668cff"} setBgColor={setBgColor} />
-        <ColorButton bgColor={" #800080"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"  #4d4dff"} setBgColor={setBgColor} />
         <ColorButton bgColor={"#b2b266"} setBgColor={setBgColor} />
         <ColorButton bgColor={"#c65353"} setBgColor={setBgColor} />
-        <ColorButton bgColor={"#ff4d94"} setBgColor={setBgColor} />
+        <ColorButton bgColor={" #ff80ff"} setBgColor={setBgColor} />
         <ColorButton bgColor={"#85adad"} setBgColor={setBgColor} />
         <ColorButton bgColor={"#ffc266"} setBgColor={setBgColor} />
-        <ColorButton bgColor={"#c2c2a3"} setBgColor={setBgColor} />
+        <ColorButton bgColor={"#cc9966"} setBgColor={setBgColor} />
         <ColorButton bgColor={"#cc6666"} setBgColor={setBgColor} />
       </div>
     </div>

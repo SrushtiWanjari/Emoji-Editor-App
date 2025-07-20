@@ -1,23 +1,31 @@
+body {
+  background-color: #cccc99;
+}
 .container {
   position: relative;
 }
 .heading {
   text-align: center;
+  color: #393916;
 }
 .description {
   text-align: center;
+  color: rgb(50, 48, 48);
+  font-size: 20px;
 }
 .main-emoji-box {
-  width: 160px;
-  height: 160px;
+  width: 210px;
+  height: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px auto;
+  margin: auto;
+  margin-top: 150px;
   border-radius: 25px;
   border: 1px solid gray;
   box-shadow: 0 4px 6px gray;
 }
+
 .emoji-picker {
   width: fit-content;
   border: 1px solid black;
@@ -25,21 +33,25 @@
   border-radius: 10px;
   position: absolute;
   top: 130px;
+  background-color: #434323;
 }
-.emoji-range{
-    display: flex;
-    justify-content: center;
+.emoji-range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
-.angle-container{
+
+.angle-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.angle-img{
- height: 50px;
- cursor: pointer;
+.angle-img {
+  height: 50px;
+  cursor: pointer;
 }
-.color-picker{
+.color-picker {
   width: fit-content;
   border: 1px solid black;
   padding: 10px 5px;
@@ -47,4 +59,5 @@
   position: absolute;
   top: 130px;
   right: 0;
+  background-color: #434323;
 }
