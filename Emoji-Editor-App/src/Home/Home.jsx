@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <div className="container">
-      <h1 className="heading"> 😍 Emoji Creator 😍</h1>
+      <h1 className="heading"> 😍 Emoji Editor 😍</h1>
 
       <p className="description">
         Create, customize, and share expressive emojis with an intuitive editor.. 🤖{" "}
